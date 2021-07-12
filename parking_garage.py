@@ -64,15 +64,15 @@ class Parking_Garage:
                 print("Your ticket has been paid. Please pay for it next time before entry.\n")
                 self.current_ticket['is_paid'] = True
                 print('The current ticket paid status is:', self.current_ticket['is_paid'])
-                self.parking += 1
-                self.tickets += 1 
+                self.parking[-1] += 1
+                self.tickets[-1] += 1 
                 print("Thank You, have a nice day, please come back again.\n")
             elif display > 15:
                 print(f"Your ticket has been paid. Please pay for it next time before entry.Please take your change of: {display - 15}\n")
                 self.current_ticket['is_paid'] = True
                 print('The current ticket paid status is:', self.current_ticket['is_paid'])
-                self.parking += 1
-                self.tickets += 1 
+                self.parking[-1] += 1
+                self.tickets[-1] += 1
                 print("Thank You, have a nice day, please come back again.\n")
 
 
