@@ -54,8 +54,8 @@ class Parking_Garage:
     def leave_garage(self):
         if self.current_ticket['is_paided'] == True: 
             print("Thank You, have a nice day, please come back again.\n")
-            self.parking += 1
-            self.tickets += 1
+            self.parking[-1] += 1
+            self.tickets[-1] += 1
         elif self.current_ticket['is_paided'] == False:
             display = int(input(" Your have no ticket. You must pay for your parking before you leave. The amount is 15.00 dollars: "))
             if not display or display <= 14.99:
